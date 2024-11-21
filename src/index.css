@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-100 font-sans bg-[#323b44];
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans text-gray-100;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium shadow-sm text-white bg-[#45b7d1] hover:bg-[#3da1b9] focus:outline-none focus:ring-1 focus:ring-[#45b7d1] transition-colors duration-200 rounded-none;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center px-4 py-2 border border-gray-600 text-sm font-medium text-gray-300 bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-1 focus:ring-[#45b7d1] transition-colors duration-200 rounded-none;
+  }
+  
+  .input-primary {
+    @apply block w-full px-3 py-2 border border-gray-600 shadow-sm placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-[#45b7d1] focus:border-[#45b7d1] sm:text-sm transition-colors duration-200 bg-gray-700 text-gray-100 rounded-none;
+  }
+
+  .card {
+    @apply bg-gray-800 border border-gray-700 hover:border-[#45b7d1] transition-colors duration-200 rounded-none;
+  }
+
+  .table-header {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-300 uppercase tracking-wider cursor-pointer hover:text-white transition-colors duration-200;
+  }
+
+  .table-cell {
+    @apply px-6 py-4 whitespace-nowrap text-sm text-gray-300;
+  }
+
+  .status-badge {
+    @apply px-2 inline-flex text-xs leading-5 font-medium rounded-none;
+  }
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="800" viewBox="0 0 300 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M150,20 C200,20 250,100 250,400 C250,700 200,780 150,780 C100,780 50,700 50,400 C50,100 100,20 150,20" 
+    stroke="#CBD5E1" 
+    stroke-width="2" 
+    fill="none"/>
+</svg>
